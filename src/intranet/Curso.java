@@ -5,10 +5,13 @@ public class Curso {
     public Curso(){
         this.alumnos = new ArrayList<Alumno>();
     }
-    public Alumno agregarAlumno(String nombre,String apellido, String rut, String matricula){
-        Alumno alumno = new Alumno(nombre,apellido,rut,matricula);
-        this.alumnos.add(alumno);
-        return alumno;
+    public boolean agregarAlumno(String nombre,String apellido, String rut, String matricula){
+        if(ValidadorRut.validarDigito(rut)){
+            Alumno alumno = new Alumno(nombre,apellido,rut,matricula);
+            this.alumnos.add(alumno);
+            return true;
+        }
+        return false;
     }
     public boolean removerAlumno(String nombre, String apellido, String rut, String matricula){
         for(Alumno alumno: this.alumnos){
