@@ -10,10 +10,6 @@ public class Curso {
         this.alumnos.add(alumno);
         return alumno;
     }
-    public void eliminarAlumno(Alumno alumno){
-        this.alumnos.remove(alumno);
-
-    }
     public boolean removerAlumno(String nombre, String apellido, String rut, String matricula){
         for(Alumno alumno: this.alumnos){
             if (alumno.getnombre().equals(nombre) && alumno.getapellidos().equals(apellido) && alumno.getrut().equals(rut) && alumno.getmatricula().equals(matricula)){
