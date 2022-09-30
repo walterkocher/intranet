@@ -12,6 +12,7 @@ public class Curso {
     }
     public void eliminarAlumno(Alumno alumno){
         this.alumnos.remove(alumno);
+
     }
     public boolean removerAlumno(String nombre, String rut){
         for(Alumno alumno: this.alumnos){
