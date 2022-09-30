@@ -30,13 +30,13 @@ public class Alumno {
         matricula = valorMatricula;
     }
 
-    public String getnombre (String s){ return nombre; }
+    public String getnombre (){ return nombre; }
 
-    public String getapellidos (String s) { return apellidos; }
+    public String getapellidos () { return apellidos; }
 
-    public String getrut (String s) { return rut; }
+    public String getrut () { return rut; }
 
-    public String getmatricula (String s) { return matricula; }
+    public String getmatricula () { return matricula; }
 
 
 }
