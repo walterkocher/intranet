@@ -25,7 +25,6 @@ public class Alumno {
     public void setRut (String valorRut){
         rut = valorRut;
     }
-
     public void setmatricula (String valorMatricula){
         matricula = valorMatricula;
     }
